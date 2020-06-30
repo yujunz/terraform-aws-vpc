@@ -133,6 +133,11 @@ variable "create_database_nat_gateway_route" {
   default     = false
 }
 
+variable "create_elasticache_internet_gateway_route" {
+  description = "Controls if an internet gateway route for public elasticache access should be created"
+  default     = false
+}
+
 variable "azs" {
   description = "A list of availability zones in the region"
   default     = []
